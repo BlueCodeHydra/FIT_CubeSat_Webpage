@@ -45,13 +45,13 @@ p { line-height: 1.9; }
 .navbar-expand-lg .navbar-nav .nav-link { padding: 0; }
 
 .navbar-expand-lg .navbar-nav .tm-nav-link {
-    font-size: 1.3rem;
+    font-size: 14px;               /* Nav text size*/
     font-weight: 400;
     color: white;    
     padding-bottom: 30px;    
 }
 
-.nav-item { margin-right: 60px; }
+.nav-item { margin-right: 20px; }
 
 .nav-item:last-child { margin-right: 0; }
 
@@ -77,6 +77,8 @@ p { line-height: 1.9; }
     width: 50%;
     height: 100%;
 }
+
+
 
 .tm-bg-right { background-color: rgba(0,0,0,0.5); }
 
@@ -132,7 +134,7 @@ p { line-height: 1.9; }
 
 .tm-content {
     max-width: 660px;
-    margin-top: 50px;
+    margin-top: 20px;
     padding-right: 20px;
 }
 
@@ -154,7 +156,8 @@ hr { border-top: 1px solid white; }
 
 .btn {
     padding: 10px 25px;
-    border-radius: 0;
+    border-radius: 10; /*=================================================Edit===========================*/
+    margin-top: 50px;
 }
 
 .btn-big {
@@ -250,7 +253,7 @@ textarea {
 
     .navbar-expand-lg .navbar-nav .tm-nav-link {
         color: white;
-        font-size: 1.1rem;
+        font-size: 40px;
         padding: 13px 20px;
     }
 
@@ -314,7 +317,7 @@ textarea {
 
     .tm-col-right {
         padding-top: 40px;
-        padding-left: 30px;
+        padding-left: 30px; 
     }
 
     .tm-col-footer {
