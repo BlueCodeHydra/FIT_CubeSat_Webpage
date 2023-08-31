@@ -1,9 +1,10 @@
 /*
 
-Template Outline For Cube Sat Webpage
+Template - All
 
 */
 
+/* Font color, text, spacing =================================================== */
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 17px;
@@ -25,7 +26,7 @@ p { line-height: 1.9; }
 .tm-logo { margin-right: 20px; }
 .tm-slogan { font-size: 0.8rem; }
 
-/* Navigation */
+/* Navigation ============================================================ */
 .navbar-toggler {
     padding: 8px 15px;
     border: 0;
@@ -44,8 +45,9 @@ p { line-height: 1.9; }
 
 .navbar-expand-lg .navbar-nav .nav-link { padding: 0; }
 
+/* Nav text */
 .navbar-expand-lg .navbar-nav .tm-nav-link {
-    font-size: 14px;               /* Nav text size*/
+    font-size: 20px;   
     font-weight: 400;
     color: white;    
     padding-bottom: 30px;    
@@ -60,7 +62,7 @@ p { line-height: 1.9; }
     color: #9CC;
 }
 
-/* Page Background */
+/* Page Background Slash ======================================================= */
 .tm-bg {
     position: absolute;
     left: 0;
@@ -77,8 +79,6 @@ p { line-height: 1.9; }
     width: 50%;
     height: 100%;
 }
-
-
 
 .tm-bg-right { background-color: rgba(0,0,0,0.5); }
 
@@ -106,6 +106,8 @@ p { line-height: 1.9; }
     background-color: white;
 }
 
+
+/* Shows the gray background slash ======================================= */
 .tm-container {
     width: 100%;
     height: 100%;
@@ -116,6 +118,7 @@ p { line-height: 1.9; }
     justify-content: space-between;  
 }
 
+/* Puts content within gray box (left margin) */
 .tm-row { display: flex; }
 
 .tm-col-left {
@@ -125,6 +128,7 @@ p { line-height: 1.9; }
     padding-right: 40px;
 }
 
+/* Puts content within gray box (right margin) */
 .tm-col-right {
     width: 50%;
     height: 100%;
@@ -132,31 +136,33 @@ p { line-height: 1.9; }
     padding-right: 70px;
 }
 
+/* Sets content top margin */
 .tm-content {
     max-width: 660px;
-    margin-top: 20px;
+    margin-top: 50px;
     padding-right: 20px;
 }
 
-.tm-about { max-width: 525px; }
-
+/* Oval Scroll bar to right */
 ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 10px;
 }
-  
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: rgba(255,255,255,.8);
     box-shadow: 0 0 1px rgba(255,255,255,.8);
 }
 
+/* White Content Separation Slash */
 .tm-content-title { font-size: 1.5rem; }
 hr { border-top: 1px solid white; }
 
+
+/* Button on home page =================================================== */
 .btn {
     padding: 10px 25px;
-    border-radius: 10; /*=================================================Edit===========================*/
+    border-radius: 10;
     margin-top: 50px;
 }
 
@@ -166,7 +172,7 @@ hr { border-top: 1px solid white; }
 }
 
 .btn-primary {
-    background-color: white;
+    background-color: white;                                 
     color: black;
     border: 0;
 }
@@ -190,93 +196,12 @@ hr { border-top: 1px solid white; }
     color: #9CC;
 }
 
-/* Service */ 
-.tm-service-text { max-width: 365px; }
-.tm-service-img { margin-right: 25px; }
-.tm-service-img-r { margin-left: 25px; }
+/* Image and text spacing */
+.tm-spacing-text { max-width: 365px; }
+.tm-spacing-img { margin-right: 25px; }
+.tm-spacing-img-r { margin-left: 25px; }
 
-/* Contact */
-.form-control,
-textarea {    
-    color: white;
-    background-color: transparent;
-    background-clip: padding-box;
-    border: none;
-    border-bottom: 1px solid #999A9B;
-    border-radius: 0;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    padding: 10px 0;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-.form-control:focus {
-    color: white;
-    background-color: transparent;    
-    box-shadow: none;
-    border-color: #9CC;
-    outline: none;
-}
-
-.mb-85 { margin-bottom: 85px; }
-.tm-contact-main { max-width: 690px; }
-
-.tm-contact {
-    max-width: 420px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.form-control::-webkit-input-placeholder { color: white; } /* Edge */  
-.form-control:-ms-input-placeholder { color: white; } /* Internet Explorer 10-11 */  
-.form-control::placeholder { color: white; }
-
-@media (max-width: 1200px) {
-    .nav-item { margin-right: 30px; }
-
-    .tm-page-right {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-}
-
-@media (max-width: 992px) {    
-    .tm-nav {
-        position: absolute;
-        background: rgba(0, 0, 0, 0.8);
-        color: white;
-        top: 44px;
-        right: 4px;
-    }
-
-    .navbar-expand-lg .navbar-nav .tm-nav-link {
-        color: white;
-        font-size: 40px;
-        padding: 13px 20px;
-    }
-
-    .nav-item { margin-right: 0; }
-
-    .nav-item.active .tm-nav-link,
-    .nav-item:hover .tm-nav-link {
-        color: #9CC;
-    }
-
-    .tm-content { margin-top: 20px; }
-    .tm-site-footer { padding-top: 40px; }
-    .tm-col-left { width: 40%; }
-
-    .tm-col-right {
-        width: 60%;
-        padding-left: 100px;
-        padding-right: 30px;
-    }
-    
-    .tm-col-footer { padding-left: 0; }
-}
-
+/* Column Alignment  */
 @media (max-width: 768px) {
     .tm-row { flex-direction: column; }
 
@@ -317,7 +242,7 @@ textarea {
 
     .tm-col-right {
         padding-top: 40px;
-        padding-left: 30px; 
+        padding-left: 30px;
     }
 
     .tm-col-footer {
@@ -326,16 +251,18 @@ textarea {
     }
 }
 
+/* Site name and logo */
 @media (max-width: 460px) {
     .tm-logo { margin-right: 15px; }
     .tm-sitename { font-size: 1.8rem; }
     .tm-slogon { font-size: 0.8rem; }
 }
 
+/* Spacing for media Images */
 @media (max-width: 450px), (min-width: 768px) and (max-width: 830px), (min-width: 992px) and (max-width: 1040px) {
-    .tm-service-media { flex-direction: column; }
-    .tm-service-media-img-l { flex-direction: column-reverse; }
-    .tm-service-text { margin-top: 20px; }
-    .tm-service-img { margin-right: 0; }
-    .tm-service-img-r { margin-left: 0; }
+    .tm-spacing-media { flex-direction: column; }
+    .tm-spacing-media-img-l { flex-direction: column-reverse; }
+    .tm-spacing-text { margin-top: 20px; }
+    .tm-spacing-img { margin-right: 0; }
+    .tm-spacing-img-r { margin-left: 0; }
 }
